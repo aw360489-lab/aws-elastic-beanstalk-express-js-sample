@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        node {
-            customWorkspace '/workspace'
-        }
-    }
+    agent any
 
     environment {
         DOCKERHUB_REPO = 'rv2342/nodejs-devops-app'
